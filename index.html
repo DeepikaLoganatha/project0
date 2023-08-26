@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Text Box Example</title>
+</head>
+<body>
+    <h1>Name</h1>
+    <label for="textbox">Enter your name:</label>
+    <input type="text" id="textbox" placeholder="Type something..."><br>
+    <br>
+    <button onclick="displayText()">Click</button>
+    <p id="output"></p>
+
+    <script>
+        function displayText() {
+            var inputText = document.getElementById("textbox").value;
+            var outputElement = document.getElementById("output");
+            outputElement.textContent = "Your name: " + inputText;
+        }
+    </script>
+</body>
+</html>
